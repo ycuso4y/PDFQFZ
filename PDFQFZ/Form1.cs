@@ -887,28 +887,8 @@ namespace PDFQFZ
                                 {
                                     continue;
                                 }
-                                int random_w = 0, random_h = 0;
-                                Random random = new Random();
-                                random_w = random.Next(-5, 6);//随机偏移
-                                random_h = random.Next(-5, 6);//随机偏移
                                 wbl = Convert.ToSingle(textPx.Text);//这里根据比例来定位
-                                if((wbl + 0.01f * random_w) < 1f)
-                                {
-                                    wbl = wbl + 0.01f * random_w;
-                                }
-                                else
-                                {
-                                    wbl = wbl - 0.01f * random_w;
-                                }
                                 hbl = 1 - Convert.ToSingle(textPy.Text);//这里根据比例来定位
-                                if ((hbl - 0.01f * random_h) > 0f)
-                                {
-                                    hbl = hbl - 0.01f * random_h;
-                                }
-                                else
-                                {
-                                    hbl = hbl + 0.01f * random_h;
-                                }
                             }
                             else
                             {
