@@ -75,7 +75,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="O2S.Components.PDFRender4NET">
-      <HintPath>..\..\..\..\..\Downloads\O2S.Components.PDFRender4NET.dll</HintPath>
+  <HintPath>libs\O2S.Components.PDFRender4NET.dll</HintPath>
+  <Private>true</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
